@@ -1,10 +1,13 @@
+<!DOCTYPE>
+
 <!DOCTYPE html>
 <html>
-   
-<head>   
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>Code -by ZhenYu.Sha</title>
-    <style type="text/css">
+<head>
+	<title>Hello, Kyle.</title>
+	<meta charset="utf-8" />
+</head>
+
+	<style type="text/css">
         html, body {
             width: 100%;
             height: 100%;
@@ -16,9 +19,8 @@
             padding: 0;
         }
     </style>
-</head>
-   
-<body>  
+<body>
+
 <canvas id="cvs"></canvas>
 <script type="text/javascript">
     var cvs = document.getElementById("cvs");
@@ -29,7 +31,7 @@
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
     var codeRainArr = []; //代码雨数组
     var cols = parseInt(cw / 14); //代码雨列数
-    var step = 16;    //步长，每一列内部数字之间的上下间隔
+    var step = 16;    //步长，每一列内部数字之间的上下间隔
     ctx.font = "bold 26px microsoft yahei"; //声明字体，个人喜欢微软雅黑
  
     function createColorCv() {
@@ -60,7 +62,7 @@
                     x: colx,
                     y: -(step * i) - basePos,
                     speed: speed,
-                    //  text : parseInt(Math.random()*10)%2 == 0 ? 0 : 1  //随机生成0或者1
+                    //  text : parseInt(Math.random()*10)%2 == 0 ? 0 : 1  //随机生成0或者1
                     text: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "s", "t", "u", "v", "w", "x", "y", "z"][parseInt(Math.random() * 11)], //随机生成字母数组中的一个
                     color: "rgb(" + rgbr + ',' + rgbg + ',' + rgbb + ")"
                 }
@@ -91,10 +93,10 @@
                 }
                 
                 //1 颜色也随机变化
-                //ctx.fillStyle = "hsl("+(parseInt(Math.random()*359)+1)+",30%,"+(50-i*2)+"%)"; 
+                //ctx.fillStyle = "hsl("+(parseInt(Math.random()*359)+1)+",30%,"+(50-i*2)+"%)"; 
  
                 //2 绿色逐渐变浅
-                // ctx.fillStyle = "hsl(123,80%,"+(30-i*2)+"%)"; 
+                // ctx.fillStyle = "hsl(123,80%,"+(30-i*2)+"%)"; 
  
                 //3 绿色随机
                 // var r= 0;
@@ -118,6 +120,7 @@
     //开始下雨吧 GO>>
     requestAnimationFrame(codeRaining);
 </script>
-   
+
 </body>
 </html>
+
