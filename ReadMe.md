@@ -1,1 +1,8 @@
-> Hi, I am KYLE, a CS student from China.
+This is a web site of computer technology, which politically sensitive tech.
+
+TODO ...
+
+TODO ...
+
+TODO ...
+
